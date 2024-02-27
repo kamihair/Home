@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(to right, #9b59b6, #e74c3c);
     color: #fff;
     padding: 2rem;
     text-align: center;
@@ -62,7 +62,7 @@ ul {
 }
 
 footer {
-    background-color: #333;
+    background: linear-gradient(to right, #9b59b6, #e74c3c);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
