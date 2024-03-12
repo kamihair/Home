@@ -55,10 +55,13 @@ createApp({
                 oldPrice: "$210.00",
                 image: "img/hair/hair8.jpg"
             },
-        ])
+        ]);
+
+        const commingSoonProducts = ref(latestProducts.value);
         return {
             count: ref(0),
-            latestProducts
+            latestProducts,
+            commingSoonProducts
         }
     }
 }).mount('#app');

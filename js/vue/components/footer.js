@@ -13,8 +13,10 @@ export default {
 					<div class="single-footer-widget">
 						<h6>About Us</h6>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
-							magna aliqua.
+							<div>Doha - from KAMI HAIR</div>
+							<div>Human hair for extensions</div>
+							<div>⭐️We supply hair extensions from Vietnam with many types.</div>
+							<div>🤝Please contact us to exchange hair and best prices.</div>
 						</p>
 					</div>
 				</div>
@@ -51,14 +53,13 @@ export default {
 					<div class="single-footer-widget mail-chimp">
 						<h6 class="mb-20">Instragram Feed</h6>
 						<ul class="instafeed d-flex flex-wrap">
-							<li><img src="img/i1.jpg" alt=""></li>
-							<li><img src="img/i2.jpg" alt=""></li>
-							<li><img src="img/i3.jpg" alt=""></li>
-							<li><img src="img/i4.jpg" alt=""></li>
-							<li><img src="img/i5.jpg" alt=""></li>
-							<li><img src="img/i6.jpg" alt=""></li>
-							<li><img src="img/i7.jpg" alt=""></li>
-							<li><img src="img/i8.jpg" alt=""></li>
+							<li><a target="_blank" href="https://www.instagram.com/reel/C4YJLd4JWnJ/"><img style="width: 58px; height:58px" src="img/instagram/1.png" alt=""></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/p/C4S5Ykfhx-w/"><img style="width: 58px; height:58px" src="img/instagram/2.png" alt=""></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/p/C3zcxcHR6PJ/"><img style="width: 58px; height:58px" src="img/instagram/3.png" alt=""></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/p/C3xLoFsxT7Y/"><img style="width: 58px; height:58px" src="img/instagram/4.png" alt=""></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/p/C3j3ciMh3z-/"><img style="width: 58px; height:58px" src="img/instagram/5.png" alt=""></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/p/C3j1hN3hrvO/"><img style="width: 58px; height:58px" src="img/instagram/6.png" alt=""></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/p/C4ZvoevRqOS/"><img style="width: 58px; height:58px" src="img/instagram/7.png" alt=""></a></li>
 						</ul>
 					</div>
 				</div>
@@ -67,23 +68,18 @@ export default {
 						<h6>Follow Us</h6>
 						<p>Let us be social</p>
 						<div class="footer-social d-flex align-items-center">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
+							<a target="_blank" href="https://www.instagram.com/kamihair_extensions/"><i class="fa fa-instagram"></i></a>
+							<a href="whatsapp://send?abid=+817084781961text=Hi"><i class="fa fa-whatsapp"></i></a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
-				<p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
+				<p class="footer-text m-0">
+					Kami hair | Best quality best price.
+				</p>
 			</div>
 		</div>
 	</footer>
     `
-  // Can also target an in-DOM template:
-  // template: '#my-template-element'
 }
