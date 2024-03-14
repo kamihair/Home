@@ -1,63 +1,34 @@
-import { createApp, ref } from '../../vue.js'
+import { createApp, ref, onMounted } from '../../vue.js'
 import AppFooter from '../components/footer.js'
+import AppHeader from '../components/header.js'
+import { API_TARGETS, apiCallAsync } from '../../api.js';
 
 createApp({
     components: {
-        AppFooter
+        AppFooter, AppHeader
     },
     setup() {
-        const latestProducts = ref([
-            {
-                name: "addidas New Hammer sole\nfor Sports person",
-                price: "$150.00",
-                oldPrice: "$210.00",
-                image: "img/hair/hair1.jpg"
-            },
-            {
-                name: "addidas New Hammer sole\nfor Sports person",
-                price: "$150.00",
-                oldPrice: "$210.00",
-                image: "img/hair/hair2.jpg"
-            },
-            {
-                name: "addidas New Hammer sole\nfor Sports person",
-                price: "$150.00",
-                oldPrice: "$210.00",
-                image: "img/hair/hair3.jpg"
-            },
-            {
-                name: "addidas New Hammer sole\nfor Sports person",
-                price: "$150.00",
-                oldPrice: "$210.00",
-                image: "img/hair/hair4.jpg"
-            },
-            {
-                name: "addidas New Hammer sole\nfor Sports person",
-                price: "$150.00",
-                oldPrice: "$210.00",
-                image: "img/hair/hair5.jpg"
-            },
-            {
-                name: "addidas New Hammer sole\nfor Sports person",
-                price: "$150.00",
-                oldPrice: "$210.00",
-                image: "img/hair/hair6.jpg"
-            },
-            {
-                name: "addidas New Hammer sole\nfor Sports person",
-                price: "$150.00",
-                oldPrice: "$210.00",
-                image: "img/hair/hair7.jpg"
-            },
-            {
-                name: "addidas New Hammer sole\nfor Sports person",
-                price: "$150.00",
-                oldPrice: "$210.00",
-                image: "img/hair/hair8.jpg"
-            },
-        ]);
 
-        const commingSoonProducts = ref(latestProducts.value);
+        // [{
+        //     name: "Sample",
+        //     price: "0",
+        //     oldPrice: "0",
+        //     image: "img/hair/hair3.jpg"
+        // }]
+        const latestProducts = ref([]);
+        const commingSoonProducts = ref([]);
+
+
+        // Init execution
+
+        apiCallAsync([
+            API_TARGETS.LASTEST_PRODUCTS
+        ]).then((data) => {
+            console.log(data);
+            latestProducts.value = data.data[API_TARGETS.LASTEST_PRODUCTS];
+        });
+
+
         return {
             count: ref(0),
             latestProducts,

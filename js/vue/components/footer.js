@@ -5,6 +5,7 @@ export default {
     const count = ref(0)
     return { count }
   },
+  /*html*/
   template: `
     <footer class="footer-area section_gap">
 		<div class="container">
@@ -69,7 +70,7 @@ export default {
 						<p>Let us be social</p>
 						<div class="footer-social d-flex align-items-center">
 							<a target="_blank" href="https://www.instagram.com/kamihair_extensions/"><i class="fa fa-instagram"></i></a>
-							<a href="whatsapp://send?abid=+817084781961text=Hi"><i class="fa fa-whatsapp"></i></a>
+							<a target="_blank" href="https://wa.me/817084781961?text=Hi"><i class="fa fa-whatsapp"></i></a>
 						</div>
 					</div>
 				</div>
